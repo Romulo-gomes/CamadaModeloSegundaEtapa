@@ -62,8 +62,7 @@ public class Paciente implements Serializable{
     private String sexo;
     
     @NotBlank(message = "O nome não pode ser em branco")
-    @Length()
-    @Column(name = "historico")
+    @Column(name = "historico",columnDefinition = "text")
     private String historico;
     
     @Min(value = 0, message = "O peso não pode ser negativo")

@@ -52,7 +52,7 @@ public class Consulta implements Serializable{
     private Calendar hora;
     @NotNull(message = "A pré-consulta não pode ser nulo")
     @NotBlank(message = "A pré-consulta não pode ser em branco")
-    @Column(name = "preconsulta", nullable = false)
+    @Column(name = "preconsulta", nullable = false, columnDefinition = "text")
     private String preconsulta;
     @NotNull(message = "A pós-consulta não pode ser nulo")
     @NotBlank(message = "A pós-consulta não pode ser em branco")

@@ -42,7 +42,7 @@ public class Receituario implements Serializable{
     private Integer id;
     @NotNull(message = "A posologia não pode ser nulo")
     @NotBlank(message = "A posologia não pode ser em branco")
-    @Column(name = "posologia", nullable = false)
+    @Column(name = "posologia", nullable = false, columnDefinition = "text")
     private String posologia;
     @NotNull(message = "A data deve ser informado")
     @Temporal(TemporalType.DATE) // conotação...
