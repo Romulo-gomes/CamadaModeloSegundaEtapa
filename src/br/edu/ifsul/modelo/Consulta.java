@@ -84,10 +84,19 @@ public class Consulta implements Serializable{
         this.exame.add(obj);
     }
     
+    public void removeExame(int index){
+        this.exame.remove(index);
+    }
+    
     public void adicionaReceita(Receituario obj){
         obj.setConsulta(this);
         this.receituario.add(obj);
     }
+    
+    public void removeReceita(int index){
+        this.receituario.remove(index);
+    }
+    
     public Integer getId() {
         return id;
     }
